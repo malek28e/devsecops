@@ -12,6 +12,8 @@ public class SecurityTestController {
 
    // ❌ INJECTION SQL TRÈS EXPLICITE   // ❌ INJECTION SQL TRÈS EXPLICITE
 
+   // ❌ INJECTION SQL TRÈS EXPLICITE   // ❌ INJECTION SQL TRÈS EXPLICITE
+
    @GetMapping("/login-unsafe")
    public String loginUnsafe(@RequestParam String username, @RequestParam String password) {
        // Simulation d'une connexion très vulnérable
